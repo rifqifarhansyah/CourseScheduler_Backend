@@ -1,0 +1,19 @@
+[
+    {
+      "namaMk": "Mata Kuliah 1",
+      "jumlahSks": 3,
+      "jurusan": "Jurusan A",
+      "fakultas": "Fakultas A",
+      "semesterMin": 4,
+      "prediksiNilai": "A"
+    },
+    {
+      "namaMk": "Mata Kuliah 2",
+      "jumlahSks": 2,
+      "jurusan": "Jurusan B",
+      "fakultas": "Fakultas B",
+      "semesterMin": 3,
+      "prediksiNilai": "B"
+    }
+  ]
+  

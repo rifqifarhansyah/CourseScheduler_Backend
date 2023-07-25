@@ -1,0 +1,99 @@
+[
+    {
+      "namaMk": "Logika Komputasional",
+      "jumlahSks": 2,
+      "jurusan": "Teknik Informatika",
+      "fakultas": "STEI",
+      "semesterMin": 3,
+      "prediksiNilai": "B"
+    },
+    {
+      "namaMk": "Algoritma dan Struktur Data",
+      "jumlahSks": 4,
+      "jurusan": "Teknik Informatika",
+      "fakultas": "STEI",
+      "semesterMin": 3,
+      "prediksiNilai": "AB"
+    },
+    {
+        "namaMk": "Matematika Diskrit",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 3,
+        "prediksiNilai": "A"
+    },
+    {
+        "namaMk": "Teori Bahasa Formal dan Otomata",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 3,
+        "prediksiNilai": "A"
+    },
+    {
+        "namaMk": "Aljabal Linier dan Geometri",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 3,
+        "prediksiNilai": "A"
+    },
+    {
+        "namaMk": "Organisasi dan Arsitektur Komputer",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 3,
+        "prediksiNilai": "A"
+    },
+    {
+        "namaMk": "Pemrograman Berorientasi Objek",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 4,
+        "prediksiNilai": "BC"
+    },
+    {
+        "namaMk": "Strategi Algoritma",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 4,
+        "prediksiNilai": "A"
+    },
+    {
+        "namaMk": "Probabilitas dan Statistika",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 4,
+        "prediksiNilai": "B"
+    },
+    {
+        "namaMk": "Sistem Operasi",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 4,
+        "prediksiNilai": "B"
+    },
+    {
+        "namaMk": "Basis Data",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 4,
+        "prediksiNilai": "AB"
+    },
+    {
+        "namaMk": "Rekayasa Perangkat Lunak",
+        "jumlahSks": 3,
+        "jurusan": "Teknik Informatika",
+        "fakultas": "STEI",
+        "semesterMin": 5,
+        "prediksiNilai": "A"
+    }
+  ]
+  
