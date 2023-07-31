@@ -4,13 +4,15 @@ services:
     image: mysql/mysql-server:5.7
     ports:
       - "3306:3306"
-    environment:
-      - MYSQL_ROOT_PASSWORD=Aremaniak1_
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=Aremaniak1_ 
-      - MYSQL_DATABASE=course_scheduler   
+    # environment:
+    #   - MYSQL_ROOT_PASSWORD=Aremaniak1_
+    #   - MYSQL_USER=root
+    #   - MYSQL_PASSWORD=Aremaniak1_ 
+    #   - MYSQL_DATABASE=course_scheduler   
   web:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "5001:5001"
     volumes:

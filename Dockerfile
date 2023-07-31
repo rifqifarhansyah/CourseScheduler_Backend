@@ -1,17 +1,20 @@
+# Use the official Golang image as the base image
 FROM golang:alpine
 
-RUN mkdir /app
-
+# Set the working directory in the container
 WORKDIR /app
 
-ADD go.mod .
-ADD go.sum .
+# Copy the Go modules manifests
+COPY go.mod go.sum ./
 
+# Download dependencies
 RUN go mod download
-ADD . .
 
-RUN go install -mod=mod github.com/githubnemo/CompileDaemon
+# Copy the entire project to the container
+COPY . .
 
-EXPOSE 5001
+# Build the Go application
+RUN go build -o main .
 
-ENTRYPOINT CompileDaemon --build="go build main.go" --command=./main
+# Set the command to run the application
+CMD ["./main"]
