@@ -1,6 +1,6 @@
 # CourseScheduler - BackEnd
 <h2 align="center">
-   Course Scheduler Web
+   <a href="https://course-scheduler-frontend-cztvf3pz6-rifqifarhansyah.vercel.app/" target="_blank">Course Scheduler Web</a>
 </h2>
 <hr>
 
@@ -66,30 +66,8 @@ Sebuah aplikasi berbasis website sederhana yang dapat digunakan untuk melakukan 
     ```sh
     docker compose up
     ```
-5. Apabila pada endpoint tertentu muncul error `table coursescheduler.courses` maka jalankan perintah pada langkah 5-8 berikut:
-    ```sh
-    docker-compose exec db mysql -u root -p
-    ```
-6. Masukkan password sesuai yang diminta
-7. Setelah berhasil masuk ke `MySQL server`, masukkan query berikut:
-    ```sh
-    CREATE DATABASE IF NOT EXISTS course_scheduler;
-    USE course_scheduler;
-    CREATE TABLE IF NOT EXISTS courses (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    namaMk VARCHAR(255),
-    jurusan VARCHAR(255),
-    fakultas VARCHAR(255),
-    jumlahSks INT,
-    semesterMin INT,
-    prediksiNilai VARCHAR(255)
-    );
-    ```
-8. Lalu keluarlah dari `MySQL server` dengan memasukkan command:
-    ```sh
-    exit
-    ```
-9. Program backend akan otomatis dijalankan pada localhost `(default PORT:5001)`
+5. Program backend akan otomatis dijalankan pada localhost `(default PORT:5001)`
+6. Atau dengan cara lain yaitu membuka pranala berikut [ini](https://course-scheduler-frontend-cztvf3pz6-rifqifarhansyah.vercel.app/)
 
 <a name="usage"></a>
 
