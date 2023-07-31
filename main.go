@@ -167,7 +167,8 @@ var nilaiKonversi = map[string]float64{
 	"B":  3.0,
 	"BC": 2.5,
 	"C":  2.0,
-	"D":  1.0,
+	"D":  1.5,
+	"E":  1.0,
 }
 
 func getKonversiValue(nilai string) float64 {
