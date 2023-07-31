@@ -142,7 +142,7 @@ Jadi, kompleksitas algoritma Dynamic Programming di atas adalah O(n * maxSKS), d
 ## Video Capture
 <nl>
 
-![CourseScheduler Gif](https://github.com/rifqifarhansyah/StringCompresser-Backend/blob/main/img/textCompresser.gif?raw=true)
+![CourseScheduler Gif](https://github.com/rifqifarhansyah/CourseScheduler_Backend/blob/main/img/CourseScheduler.gif?raw=true)
 
 <a name="screenshots"></a>
 
