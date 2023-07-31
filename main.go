@@ -26,12 +26,7 @@ var db *sql.DB
 
 func initDB() {
 	var err error
-	db, err = sql.Open("mysql", "root:Aremaniak1_@tcp(localhost:3306)/course_scheduler")
-	if err != nil {
-		panic(err.Error())
-	}
-
-	err = db.Ping()
+	db, err = sql.Open("mysql", "root:Aremaniak1_@tcp(db)/course_scheduler")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -290,6 +285,5 @@ func main() {
 
 	// Add the new API endpoint for course search
 	r.GET("/api/searchCourses/:jurusan/:fakultas/:semester/:minSKS/:maxSKS", searchCoursesAPI)
-
 	r.Run(":5001")
 }
