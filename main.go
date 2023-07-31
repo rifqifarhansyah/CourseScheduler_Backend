@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"strconv"
@@ -272,6 +273,15 @@ func searchCoursesAPI(c *gin.Context) {
 	c.JSON(http.StatusOK, selectedCourses)
 }
 
+func envPortOr(port string) string {
+	// If `PORT` variable in environment exists, return it
+	if envPort := os.Getenv("PORT"); envPort != "" {
+		return ":" + envPort
+	}
+	// Otherwise, return the value of `port` variable from function argument
+	return ":" + port
+}
+
 func main() {
 	initDB()
 
@@ -287,5 +297,9 @@ func main() {
 
 	// Add the new API endpoint for course search
 	r.GET("/api/searchCourses/:jurusan/:fakultas/:semester/:minSKS/:maxSKS", searchCoursesAPI)
+	var port = envPortOr("5001")
+	fmt.Println("Starting server...")
+	fmt.Println("Listening from" + port)
+	log.Fatal(http.ListenAndServe(port, r))
 	r.Run(os.Getenv("PORT"))
 }
