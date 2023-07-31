@@ -9,6 +9,7 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -278,7 +279,7 @@ func main() {
 
 	// Enable CORS
 	r.Use(setupCorsConfig())
-
+	r.Use(cors.Default())
 	r.GET("/api/getAllCourses", getAllCourses)
 	r.DELETE("/api/removeCourses/:id", removeCourse)
 	r.POST("/api/addCourses", addCourse)
