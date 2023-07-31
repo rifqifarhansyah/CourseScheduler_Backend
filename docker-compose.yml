@@ -2,8 +2,8 @@ version: '3'
 services:
   db:
     image: mysql/mysql-server:5.7
-    # ports:
-    #   - "3306:3306"
+    ports:
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=Aremaniak1_
       - MYSQL_USER=root
@@ -11,8 +11,8 @@ services:
       - MYSQL_DATABASE=course_scheduler   
   web:
     build: .
-    # ports:
-    #   - "5001:5001"
+    ports:
+      - "5001:5001"
     volumes:
       - ".:/app"
     depends_on:
