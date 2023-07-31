@@ -286,5 +286,5 @@ func main() {
 
 	// Add the new API endpoint for course search
 	r.GET("/api/searchCourses/:jurusan/:fakultas/:semester/:minSKS/:maxSKS", searchCoursesAPI)
-	r.Run(":5001")
+	r.Run("")
 }
