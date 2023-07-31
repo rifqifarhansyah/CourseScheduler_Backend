@@ -6,10 +6,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"os"
 	"strconv"
 
-	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -28,7 +26,7 @@ var db *sql.DB
 
 func initDB() {
 	var err error
-	db, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", os.Getenv("DB_USER"), os.Getenv("DB_PASSWORD"), os.Getenv("DB_HOST"), os.Getenv("DB_PORT"), os.Getenv("DB_NAME")))
+	db, err = sql.Open("mysql", "root:Aremaniak1_@tcp(db)/course_scheduler")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -279,7 +277,7 @@ func main() {
 
 	// Enable CORS
 	r.Use(setupCorsConfig())
-	r.Use(cors.Default())
+
 	r.GET("/api/getAllCourses", getAllCourses)
 	r.DELETE("/api/removeCourses/:id", removeCourse)
 	r.POST("/api/addCourses", addCourse)
