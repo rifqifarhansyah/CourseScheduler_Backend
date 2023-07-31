@@ -26,7 +26,7 @@ var db *sql.DB
 
 func initDB() {
 	var err error
-	db, err = sql.Open("mysql", "root:Aremaniak1_@tcp(db)/course_scheduler")
+	db, err = sql.Open("mysql", "m7vxgebbejnksj9v6zh7:pscale_pw_7gug3P5YVYXs5axkmay6EvhGNlm2mVDJtEeODnYp6AP@tcp(aws.connect.psdb.cloud)/course_scheduler?tls=true")
 	if err != nil {
 		panic(err.Error())
 	}
